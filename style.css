@@ -407,7 +407,9 @@
   .tombol1 button {
     padding: 15px;
   }
-
+  #home::after {
+    display: none;
+  }
   .container2 {
     padding: 30px;
   }
