@@ -246,7 +246,9 @@
   gap: 50px;
 }
 .display-box {
+  flex: 1;
   width: 20rem;
+  height: 28rem;
   background-color: #f8edcf;
   border-radius: 20px;
   padding: 20px;
@@ -257,6 +259,8 @@
 }
 .product-img img {
   width: 100%;
+  height: 320px;
+  border-radius: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .label {
@@ -401,15 +405,16 @@
   .section {
     padding-top: 90px;
   }
+  #home::after {
+    display: none;
+  }
   .container1 {
     padding: 30px;
   }
   .tombol1 button {
     padding: 15px;
   }
-  #home::after {
-    display: none;
-  }
+
   .container2 {
     padding: 30px;
   }
