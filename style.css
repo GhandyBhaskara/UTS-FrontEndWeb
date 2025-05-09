@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*Navigation Bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 30px);
+  background-color: #f8edcf;
+  padding: 13px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-shadow: 0 8px 20px black;
+  position: fixed;
+  z-index: 999;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease-in-out;
+}
+.gambar-logo img {
+  display: flex;
+  align-items: center;
+  width: 45px;
+  padding-right: 10px;
+}
+.first {
+  display: flex;
+  align-items: center;
+  padding-right: 2px;
+}
+.first a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.second {
+  display: flex;
+  align-items: center;
+}
+.second a {
+  text-decoration: none;
+  color: brown;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo:hover {
+  opacity: 0.7;
+}
+.menu ul {
+  display: flex;
+  gap: 40px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+.menu a:hover {
+  color: brown;
+}
+.menu li {
+  list-style: none;
+}
+.tombol {
+  display: flex;
+  gap: 10px;
+}
+.tombol button {
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #f8edcf;
+  font-weight: bold;
+  background-color: brown;
+  transition: all 0.2s ease-in-out;
+}
+.tombol button:hover {
+  background-color: #f8edcf;
+  color: brown;
+}
+/*Done*/
+
+/*background halaman*/
+.section {
+  min-height: 100vh;
+  padding-top: 120px;
+  background-size: cover;
+  background-position: center;
+}
+/*done*/
+
+#home {
+  background-image: url(Foto/bg1.jpg);
+  color: #f8edcf;
+}
+#home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), brown);
+}
+.container1 {
+  padding: 80px;
+}
+.welcome {
+  font-size: 70px;
+  line-height: 1.3;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.welcome span {
+  margin-left: 5px;
+  color: #f8edcf;
+  animation: blink 1s infinite ease;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.slogan {
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.tombol1 button {
+  padding: 10px 2%;
+  margin-top: 10px;
+  background-color: brown;
+  color: #f8edcf;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+.tombol1 button:hover {
+  color: brown;
+  background-color: #f8edcf;
+  transition: all 0.2s ease-in-out;
+}
+
+#about {
+  background-color: brown;
+}
+.container2 {
+  padding: 100px;
+  padding-top: 0px;
+}
+.container2 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #f8edcf;
+}
+.card {
+  background-color: wheat;
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 7rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 8px black;
+}
+.profile-main {
+  text-align: center;
+  color: brown;
+}
+.visimisi {
+  display: flex;
+  justify-content: center;
+  color: brown;
+  gap: 20px;
+}
+.prestasi {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: brown;
+  gap: 20px;
+}
+.prestasi img {
+  width: 10rem;
+  height: 10rem;
+}
+.prestasi .desk {
+  font-size: small;
+}
+.tim {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: brown;
+  gap: 20px;
+}
+.ceo a {
+  text-decoration: none;
+  color: brown;
+  transition: opacity 0.2s ease-in-out;
+}
+.ceo a:hover {
+  opacity: 0.7;
+}
+.manager a {
+  text-decoration: none;
+  color: brown;
+  transition: opacity 0.2s ease-in-out;
+}
+.manager a:hover {
+  opacity: 0.7;
+}
+#product {
+  background-image: url(Foto/bg8blur.png);
+}
+
+.container3 {
+  padding: 100px;
+  padding-top: 0px;
+}
+.row1 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.display-box {
+  width: 20rem;
+  background-color: #f8edcf;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 8px black;
+}
+.product-img {
+  position: relative;
+}
+.product-img img {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.product-desk p {
+  font-size: small;
+}
+.CO-button {
+  width: 100%;
+  text-align: center;
+  background-color: #f8edcf;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+.CO-button:hover {
+  background-color: brown;
+}
+
+.CO-button img {
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+}
+
+#testimoni {
+  background-image: url(Foto/bg9.jpg);
+}
+.container4 {
+  padding: 100px;
+  padding-top: 0px;
+}
+.baris1 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+.baris2 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.card-testimoni {
+  width: 20rem;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8edcf;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px black;
+}
+.content {
+  font-style: italic;
+  flex-grow: 1;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.author img {
+  width: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+#contact {
+  background-color: brown;
+}
+.informasi {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  line-height: 2;
+  color: #f8edcf;
+  padding: 50px 10%;
+}
+.informasi a {
+  color: #f8edcf;
+}
+.informasi a:hover {
+  text-decoration: none;
+}
+.logo-footer img {
+  width: 100px;
+}
+.informasi {
+  display: flex;
+  align-items: center;
+}
+.sosmed {
+  display: flex;
+  align-items: center;
+}
+.sosmed img {
+  width: 20px;
+  margin-right: 20px;
+}
+.copyright {
+  font-style: italic;
+  font-size: 15px;
+  color: brown;
+  text-align: center;
+  padding: 10px;
+  background-color: #f8edcf;
+}
+
+/* Untuk di Hp */
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .menu,
+  .tombol {
+    display: none;
+  }
+  .section {
+    padding-top: 90px;
+  }
+  .container1 {
+    padding: 30px;
+  }
+  .tombol1 button {
+    padding: 15px;
+  }
+
+  .container2 {
+    padding: 30px;
+  }
+  .prestasi {
+    flex-direction: column;
+  }
+  .tim {
+    flex-direction: column;
+  }
+
+  .container3 {
+    padding: 30px;
+  }
+  .row1,
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container4 {
+    padding: 30px;
+  }
+  .baris1,
+  .baris2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .informasi {
+    align-items: center;
+    flex-direction: column;
+  }
+  .address,
+  .contact {
+    text-align: center;
+  }
+  .sosmed {
+    margin-top: 20px;
+  }
+}
